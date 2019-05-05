@@ -20,7 +20,7 @@ Module with a key value BST.
 >                                      | k == y = Fork l (y,v) r
 
 > getValueInKVBST :: Ord a => a -> KVBST a b -> b
-> getValueInKVBST k Empty                     = error "No element with such key in the treeQ"
+> getValueInKVBST k Empty                     = error "No element with such key in the tree."
 > getValueInKVBST k (Fork l (y,z) r) | k < y  = getValueInKVBST k l
 >                                    | k > y  = getValueInKVBST k r
 >                                    | k == y = z

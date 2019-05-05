@@ -9,11 +9,6 @@ A direction, corresponding to a compass point
 
 > data Direction = N | S | E | W deriving (Eq, Show)
 
-***************************************
-*              Question 1             *
-* Complete the following definitions. *
-***************************************
-
 > opposite :: Direction -> Direction
 > opposite N = S
 > opposite W = E
